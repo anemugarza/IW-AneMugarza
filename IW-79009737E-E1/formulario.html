@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario</title>
+        <link rel="stylesheet" href="css/formulario.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>FORMULARIO PRIMERA CITA GRATUITA</h1>
+            <nav>
+                <ul class = "indice">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="serviciosYTarifas.html">Servicios y tarifas</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <main>¡Rellena el siguiente formulario para conseguir una primera cita gratuita!</main>
+        <div class=todo>
+            <form action="server.php" method="post"> 
+                <div class=parte >
+                    <fieldset>
+                        <legend><strong>DATOS DEL PACIENTE:</strong></legend>
+                        <label for="nombre">Nombre completo: </label>
+                        <input type="text" name="nombre" id="nombre">
+                        <br><br>
+                        <label for="edad">Edad: </label>
+                        <select id="edad" name="edad"> 
+                            <optgroup label="Edad">
+                                <option selected>Menor de 18</option>
+                                <option>Entre 18 y 65</option> 
+                                <option>Mayor de 65</option>
+                        </select>
+                        <br><br>
+                        <label for="telf">Teléfono: </label>
+                        <input type="text" name="telf" id="telf">
+                        <br><br>
+                        <label for="email">Email: </label>
+                        <input type="text" name="email" id="email">
+                        <br><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><strong>DATOS DE LA CITA:</strong></legend>
+                        <label for="edad">Tipo de consulta: </label>
+                        <select id="consulta" name="consulta"> 
+                            <optgroup label="consulta">
+                                <option selected>Depilación láser</option>
+                                <option>Indiba</option> 
+                                <option>Titans</option>
+                                <option>Mesoestetics</option>
+                                <option>Nutrición</option>
+                        </select>
+                        <br><br>
+                        <p>Selecciona la fecha y hora de la cita: </p>
+                        <input type="datetime-local">
+                        <br><br>
+                        <textarea>Alergias/Medicamentos/Enfermedades</textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><strong>INFORMACIÓN ADICIONAL:</strong></legend>
+                        <p>¿Cómo nos has conocido?</p>
+                        <input type="radio" name="op" id="conocido" value="c">
+                        <label for="conocido">Un conocido</label>
+                        <input type="radio" name="op" id="redesSociales" value="rs">
+                        <label for="redesSociales">Redes sociales</label>
+                        <input type="radio" name="op" id="otros" value="o">
+                        <label for="otros">Otros</label>
+                        <br><br>
+                        <textarea>Comentarios o preguntas</textarea>
+                    </fieldset>
+                </div>
+                <br><br>
+                    <input type="checkbox" id="condiciones">
+                    <label for="condiciones">Acepto las condiciones</label>
+                    <br>
+                    <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <img class = "imageForm" src = "img/imgForm.webp" alt = "Imagen Formulario">
+        <p>¡Esperamos conocerte muy pronto!</p>
+        <br><br>
+
+        <footer>
+            <address>
+                <p><strong>Dirección:</strong> Gregorio de Revilla 16, Bilbao</p><br>
+                <p><strong>Teléfono:</strong> +34 688 67 30 31</p><br>
+                <p><strong>Email:</strong> info@deustoestetica.com</p><br>
+            </address>
+        </footer>
+    </body>
+</html>
